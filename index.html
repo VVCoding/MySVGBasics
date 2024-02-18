@@ -57,6 +57,25 @@
       </tr>
     </tfoot>
   </table>
+  
+  <form action="/nextpage" method="GET">
+    Name: <input name="name" type="text" /> <br/> 
+    Age: <input max="99" min="1" name="age" step="1" type="number" value="18"/>     
+    <br/>
+    <select name="gender">
+        <option selected="selected" value="blank"></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br/> 
+    <input checked="checked" name="news" type="radio" value="daily"/> Daily 
+    <input name="news" type="radio" value="weekly" />Weekly
+    <br/>
+    <textarea cols="20" name="comments" rows="5">Comment</textarea><br/>
+    <input name="terms" type="checkbox" value="tandc" />Accept terms<br/>
+    <input type="submit" value="Submit" />
+  </form>
 
 </body>
 </html>
